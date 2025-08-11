@@ -1,0 +1,26 @@
+:root {
+  --color-bg: #253334;
+  --color-bg-card: #f7f3f0;
+  --color-button: #7c9a92;
+  --color-primary: #fff;
+  --color-placeholder: #bec2c2;
+  --color-fg-hover: #3d3d3d;
+  --color-inactive: rgba(255, 255, 255, 0.5);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: var(--color-fg);
+  background: var(--color-bg);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
