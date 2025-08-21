@@ -2,7 +2,6 @@
 import { useRouter } from 'vue-router';
 import IconLogoBig from '@/icons/IconLogoBig.vue';
 import Button from '@/components/Button.vue';
-import { useProfileStore } from '@/store/profile.store';
 import { useAuthStore } from '@/store/auth.store';
 
 const router = useRouter();
@@ -18,8 +17,7 @@ function redirectToMain() {
 }
 </script>
 <template>
-  <RouterView />
-  <!-- <div class="auth-wrap">
+  <div class="auth-wrap">
     <div class="auth-logo">
       <IconLogoBig />
     </div>
@@ -33,7 +31,7 @@ function redirectToMain() {
         >Войти в приложение</Button
       >
     </div>
-  </div> -->
+  </div>
 </template>
 <style scoped>
 .button-class {
@@ -49,7 +47,7 @@ function redirectToMain() {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url('../assets/auth-bg.png');
+  background-image: url('../../public/auth-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
