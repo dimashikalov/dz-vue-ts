@@ -1,6 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  customClass?: string | string[];
+  customStyle?: Record<string, string>;
+}>();
+</script>
 <template>
-  <button class="button-card">
+  <button class="button-card" :class="customClass" :style="customStyle">
     <slot />
   </button>
 </template>
@@ -18,7 +23,6 @@
   gap: 10px;
   font-size: 15px;
   padding: 10px 18px;
-  border-radius: 8px;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease;

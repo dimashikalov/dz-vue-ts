@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import IconPlaySmall from '@/icons/IconPlaySmall.vue';
 import type { IMeditation } from '@/interfaces/meditation.interface';
-import ButtonCard from './ButtonCard.vue';
+import Button from './Button.vue';
 
 const props = defineProps<IMeditation>();
 </script>
@@ -10,7 +10,7 @@ const props = defineProps<IMeditation>();
     <div>{{ props.title }}</div>
     <div>{{ props.description }}</div>
     <div class="card-footer">
-      <ButtonCard> <span>Начать</span> <IconPlaySmall /> </ButtonCard>
+      <Button> <span>Начать</span> <IconPlaySmall /> </Button>
       <div>{{ props.duration_min }} мин</div>
     </div>
   </div>
